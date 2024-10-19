@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", system-ui;
-    text-decoration: none;
+    /* text-decoration: none ; */
 }
 
 :root{
@@ -42,6 +42,7 @@ ul{
 
 nav ul a{
     color: var(--dark-grayish-blue);
+    text-decoration: none;
 }
 
 nav ul a:hover{
@@ -141,7 +142,7 @@ hr{
     line-height: 1.7rem;
 }
 
-button{
+.read-more-btn{
     background-color: var(--soft-red);
     border: none;
     padding: 1rem 1.2rem;
@@ -152,7 +153,7 @@ button{
     font-size: 1.2rem;
 }
 
-button:hover{
+.read-more-btn:hover{
     background-color: var(--very-dark-blue);
     color: var(--off-white);
     cursor: pointer;
@@ -201,15 +202,28 @@ button:hover{
     line-height: 2rem;
 }
 
-.menu{
-    display: none;
+.btn-close{
+    color: var(--very-dark-blue);
+    opacity: 1 !important; /* Ask about this place */
 }
 
+ .icon-menu{
+    display: none;
+ }
 
 /* Media Query--Mobile Design*/
 @media(max-width: 778px){
     ul{
         display: none;
+        align-items: flex-start;
+    }
+
+    .icon-menu{
+        display: flex;
+     }
+
+    .navbar-nav{
+        font-weight: 400;
     }
 
     .menu{
