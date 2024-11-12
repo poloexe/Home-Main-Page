@@ -174,32 +174,35 @@ hr{
 }
 
 .footer-card img{
-    width: 30%;
+    width: 35%;
+    height: 90%;
+    margin-right: 5%;
 }
 
 .footer-card-text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 63%;
+    width: 100%;
 }
 
 .footer-card-text h1{
     color: var(--soft-red);
 }
 
-.footer-card-text h3{
+.footer-card-text h5{
     color: var(--very-dark-blue);
+    font-size: 1.4rem;
     font-weight: 800;
 }
 
-.footer-card-text h3:hover{
+.footer-card-text h5:hover{
     color: var(--soft-red);
 }
 
 .footer-card-text p{
     color: var(--dark-grayish-blue);
-    line-height: 2rem;
+    /* line-height: 1.5rem; */
 }
 
 .btn-close{
